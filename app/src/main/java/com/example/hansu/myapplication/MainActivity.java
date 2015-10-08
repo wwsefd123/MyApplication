@@ -1,4 +1,4 @@
-package com.example.hansu.hansuapp;
+package com.example.com.myapplication;
 
 import android.app.Activity;
 import android.content.Intent;
