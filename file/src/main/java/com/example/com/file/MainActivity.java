@@ -51,7 +51,9 @@ public class MainActivity extends Activity {
         cDay = cal.get(Calendar.DATE);
         File f= getExternalFilesDir("myDiary");
 
-
+        fileName = Integer.toString(cYear) + "_" + Integer.toString(cMonth)+ "_" + Integer.toString(cDay)+ ".txt";
+        String str = readDiary(fileName);
+        edtDiary.setText(str);
 
         dateView.setText(cYear + " 년 " + cMonth + " 월 " + cDay + " 일");
 
