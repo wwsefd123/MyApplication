@@ -36,6 +36,9 @@ public class MainActivity extends Activity {
         int cYear = cal.get(Calendar.YEAR);
         int cMonth = cal.get(Calendar.MONTH);
         int cDay = cal.get(Calendar.DATE);
+        fileName = Integer.toString(cYear) + "_" + Integer.toString(cMonth+1)+ "_" + Integer.toString(cDay)+ ".txt";
+        String str = readDiary(fileName);
+        edtDiary.setText(str);
 
         dp.init(cYear,cMonth,cDay,new DatePicker.OnDateChangedListener(){
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth){
